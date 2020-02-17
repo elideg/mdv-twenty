@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http'
 import { map } from 'rxjs/operators';
 import { of } from 'rxjs';
 
-const BASE_URL = 'http://fruityvice.com/api'
+const BASE_URL = 'https://fruityvice.com/api'
 
 import * as uuid from 'uuid/v1';
 
