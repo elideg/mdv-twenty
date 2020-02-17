@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-center mt-3">
+  <button mat-button [routerLink]="['/fruits']">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <mat-card class="col-6" *ngIf="fruits$ | async as fruit">
+    <mat-card-header class="align-self-center">
+      <mat-card-title>
+        <h3 mat-line>Fruit Id</h3>
+        <p>{{fruit.id}}</p>
+        <h3 mat-line>Fruit Title</h3>
+        <p>{{fruit.title}}</p>
+        <h3 mat-line>Fruit Details</h3>
+        <p>{{fruit.Details}}</p>
+      </mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div>
